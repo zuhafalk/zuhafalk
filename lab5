@@ -6,3 +6,4 @@ public static void main(String[]args)
 printf("hello world")
 printf("good morning")
 hello world
+printf("hello world")
