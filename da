@@ -1,0 +1,58 @@
+#include<limits.h>
+#include<stdbool.h>
+#include<stdio.h>
+#define V5
+int min weight (int weight[],bool visited[])
+{
+ int min = INT_MAX,min_index;
+ for(int v=0;v<v;v++)
+{
+ min=weight[v];
+ min_index=v;
+ }
+}
+return min_index;
+}
+void print MST(int parent[],int graph[v][v])
+{
+ int total cost=0;
+printf("MST for the graph:\n");
+for(int i=1;i<v;i++)
+{
+ printf("%d -%d\t %d\n",parent[i],i,graph[i][parent[i]]);
+ total cost +=graph[i][parent[i]];
+}
+printf("Total cost of MST:%d\n",total cost);
+void prim MST(int graph[v][v])
+{
+ int parent[v];
+ int parent[v];
+ bool visited[v];
+ for(int i=0;i<v;i++)
+{
+ weight [i]=INT_MAX;
+visited[i]=false;;
+}
+weight[0]=0;
+parent[0]=-1;
+for(int count=0;;count<v-1;count++)
+{
+ int u=minweight(weight,visited);
+ visited[u]true;
+ for(int v=0;v<v;v++)
+{
+ if(graph[u][v]&&visited[v]==false && graph [u][v]<weight[v]])
+{
+ parent[v]=u;
+weight[v]=graph[u][v];
+}
+}
+}
+print MST(parent,graph);
+}
+int main()
+{
+ int graph [v][v]={{0,2,0,6}{2,0,3,8,5},{0,3,0,0,7},{0,5,7,9,0}
+primMST(graph);
+return 0;
+}
